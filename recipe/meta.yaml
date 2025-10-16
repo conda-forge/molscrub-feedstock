@@ -1,6 +1,6 @@
 {% set name = "molscrub" %}
 {% set version = "0.2.2" %}
-{% set python_min = "3.8" %}
+{% set python_min = "3.9" %}
 
 
 package:
@@ -30,7 +30,7 @@ test:
     - python {{ python_min }}
     - pip
   imports:
-    - scrubber
+    - molscrub
   commands:
     - scrub.py --help
     - pip check
