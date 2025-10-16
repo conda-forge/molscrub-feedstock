@@ -1,5 +1,5 @@
 {% set name = "molscrub" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.1" %}
 {% set python_min = "3.8" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/molscrub-{{ version }}.tar.gz
-  sha256: 4b1357752d62b0c235a1cc59eb4c9f05b540f1ab76b5d012ec7f4299dbef12a1
+  sha256: 81f82d5b6e8bdf90f1994fe58a6797e9aacbdad251d379f59ee09db2cc860f07
 
 build:
   noarch: python
