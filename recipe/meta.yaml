@@ -30,7 +30,7 @@ test:
     - python {{ python_min }}
     - pip
   imports:
-    - scrubber
+    - molscrub
   commands:
     - scrub.py --help
     - pip check
