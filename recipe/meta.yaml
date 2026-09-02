@@ -1,5 +1,5 @@
 {% set name = "molscrub" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 {% set python_min = "3.9" %}
 
 
@@ -8,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/molscrub-{{ version }}.tar.gz
-  sha256: 62ae3c10fbe3e5d73156fdbcecfe625f1550606110a356855b62449b84e9e91e
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/molscrub-{{ version }}.tar.gz
+  sha256: c17d64684af3bfae311bea013ad7fd2e9fb11abfc4e3854a602e551d46c87365
 
 build:
   noarch: python
@@ -20,10 +20,14 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools
+    - joblib
     - pip
+    - rich
   run:
     - python >={{ python_min }}
     - rdkit >=2022.03.1
+    - joblib
+    - rich
 
 test:
   requires:
