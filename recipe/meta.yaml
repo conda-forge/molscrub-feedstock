@@ -20,15 +20,18 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools
+    - joblib
     - pip
   run:
     - python >={{ python_min }}
     - rdkit >=2022.03.1
+    - joblib
 
 test:
   requires:
     - python {{ python_min }}
     - pip
+    - joblib
   imports:
     - molscrub
   commands:
