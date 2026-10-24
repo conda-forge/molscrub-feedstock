@@ -1,5 +1,5 @@
 {% set name = "molscrub" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.2" %}
 {% set python_min = "3.9" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/molscrub-{{ version }}.tar.gz
-  sha256: c17d64684af3bfae311bea013ad7fd2e9fb11abfc4e3854a602e551d46c87365
+  sha256: 4ce02c9ed12980153fbe15339efcfc856961f72dcee227301a0f06b80f504180
 
 build:
   noarch: python
